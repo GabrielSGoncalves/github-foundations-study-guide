@@ -18,7 +18,7 @@ git init
 ```
 After this command you can find a `.git` folder inside your reopository with all the tracking files used by Git.
 
-## Staging files
+## Staging files and pushing changes
 Whenever you create, change or delete a file you can track it by commiting it to your branch history.
 ```bash
 git add --all
@@ -29,4 +29,13 @@ By adding the file(s) you can then write a checkout message for it.
 ```bash
 git commit -m "Adding README file to repo"
 ```
+Finally, whenever you wan't to push the files to a remote repository like Github you can define it with the following command.
+```bash
+git remote add origin https://github.com/YourUserName/your_repo_name
+git push -u origin main
+```
+Make sure you create your Github repository before trying to push the changes to it.
 
+## Understanding Git environments
+One important command to use to have a better understanding of the status of your Git repository ```git log```. This gives the view of your current branch, it's relation to remote repository and commits recorded.<br>
+Another command is `git status`, which describe the status of the files in your current working branch.
