@@ -39,4 +39,11 @@ Make sure you create your Github repository before trying to push the changes to
 ## Understanding Git environments
 One important command to use to have a better understanding of the status of your Git repository ```git log```. This gives the view of your current branch, it's relation to remote repository and commits recorded.<br>
 Another command is `git status`, which describe the status of the files in your current working branch.
-Another powerful command is `restore`. It can restore the state of tracked files to previous states. For example, `git restore --staged .` would unstage all files that were added to staging, and `git restore .` would remove all the changes made to tracked files.
+Another powerful command is `restore`. It can restore the state of tracked files to previous states. For example, `git restore --staged .` would unstage all files that were added to staging, and `git restore .` would remove all the changes made to tracked files. In case you deleted a tracked file, if you run `restore` command, it would appear back in your repository folder.
+
+## Ignoring files
+Software projects usually need settings files that are not supposed to be versioned, as it may carry sensitive data. To prevent Git to track these types of files you can create `.gitignore` file inside your repository.
+
+## Deleting and renaming files
+Whenever you delete a tracked file from your Git repository, it's marked for deletion, an you need to add and commit it, in order to formalize the deletion. You can also use the `git rm <file>` to delete and stage a file in one step. <br>
+In case of renaming, you can use `git mv <file>` in order to avoid having to track a deletion and creation of files.
