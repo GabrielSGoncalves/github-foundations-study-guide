@@ -76,3 +76,19 @@ And then, use `merge` to bring the changes made to the new branch to `main`.
 ```bash
 git merge <NEW BRANCH NAME>
 ```
+
+## Deleting branches
+It's a good practice to delete branches that were already merged into production (to `main` branch). 
+```bash
+git branch --delete <NEW BRANCH NAME>
+git branch --d <NEW BRANCH NAME>
+git branch --D <NEW BRANCH NAME>
+```
+
+## Git Flow
+Git Flow is the process described above of:
+1. Creating a new feature branch from main branch
+2. Make changes to the new feature branch
+3. Merge the changes from feature to main branch
+4. Delete feature branch
+Most companies follow these steps, adding a few variations.
