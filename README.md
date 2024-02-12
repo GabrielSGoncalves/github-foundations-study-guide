@@ -66,3 +66,13 @@ git rebase -i --root
 
 ## Branching
 Branching allows you to create alternative versions of your Git project in order to develope and test new features. To have check the available branches from your repository you can use `git branch`. Whenever you want to create a new branch, keeping the history of the current branch you can use `git switch -c <NEW BRANCH NAME>` (or older command `git checkout -b <NEW BRANCH NAME>`).
+
+## Merge
+After making changes to your new branch, you can merge it to the `main` branch. First, you need to commit the changes made to the new branch, and switch back to the `main` branch.
+```bash
+git switch main
+```
+And then, use `merge` to bring the changes made to the new branch to `main`.
+```bash
+git merge <NEW BRANCH NAME>
+```
