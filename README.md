@@ -92,3 +92,10 @@ Git Flow is the process described above of:
 3. Merge the changes from feature to main branch
 4. Delete feature branch
 Most companies follow these steps, adding a few variations.
+
+## Merging conflicts
+Merging conflicts are probably one of the most trickier activities when using Git, as you have to decided between which changes to keep, and which to discard. Whenever you perform a `merge` and the branches are display code differences, Git will display arrows (`<<<<<<<<<<`, `==========` and `>>>>>>>>>>`) around the code block that is in conflict and you have to decide what to keep.
+
+## Stash and clean
+With `git stash` you store current changes from working branch, without staging and commiting it. To list the stashed changes you can use `git stash list`, and if you want to bring the stashed changes to working branch without removing it from stash list use `git stash apply`. Or `git stash pop` to do it while removing changes from stash list.<br>
+One way to get rid of untracked files and folder is by using `git clean`. If you want to perform a dry run to validate what would remove, you should use `git clean -n`. And if you want to perform the cleaning `git clean -df` (`-d` for removing folders and `-f` for forcing clean).
