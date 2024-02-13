@@ -116,4 +116,15 @@ git push -u origin main
 Where `origin` is the name you define for your remote repository and `main` the name of the local branch you want to push.
 You can also sinchronize all your local branches with GitHub with the command `git push --all`.
 
-> Quotations lalallallalaall
+## Important GitHub repo files
+There are some essential files that should be present in every GitHub repository, specially if it's a open source project.
+- README : The markdown file that behaves like your project landing page
+- LICENSE : If it's a open source project, this is an essential file that describe how your software is licensed
+- CODE_OF_CONDUCT : Describe how contributors should behave within the project
+- SECURITY : Describes how to report security problems
+- CONTRIBUTING : Describes how contributors should contribute to the project
+- SUPPORT : Describes how users should ask support about the project
+- CODEOWNERS : Describes who's responsible for code in the project
+
+## Pull requests
+Pull requests are the process of submitting changes to the main repository branch through the creation of a new branches. Instead of pushing the changes directly to the main branch, when you are working in a colaborative project, every change must pass the scrutiny of the pull request and code review in order to stablish a quality control for colaboration. It's an essential part of the Git Flow framework.
