@@ -99,3 +99,21 @@ Merging conflicts are probably one of the most trickier activities when using Gi
 ## Stash and clean
 With `git stash` you store current changes from working branch, without staging and commiting it. To list the stashed changes you can use `git stash list`, and if you want to bring the stashed changes to working branch without removing it from stash list use `git stash apply`. Or `git stash pop` to do it while removing changes from stash list.<br>
 One way to get rid of untracked files and folder is by using `git clean`. If you want to perform a dry run to validate what would remove, you should use `git clean -n`. And if you want to perform the cleaning `git clean -df` (`-d` for removing folders and `-f` for forcing clean).
+
+# Working with GitHub
+Previously we have used Git commands to manage our local repository. With GitHub (and other Git Cloud platforms like Bitbucket and Gitlab) you can sinchronize your local tracked repository with a cloud storage. <br>
+After creating a GitHub account you can create new repositories and start pushing and pulling information from it. <br>
+
+## Pushing to GitHub
+The first thing you need to do to link your local repository to a GitHub repository is use the `git remote add` with the url from the desired GitHub repository. The convention is to use `origin` to reference GitHub repository url.
+```bash
+git remote add origin  https://github.com/<YOUR GITHUB USERNAME>/<YOUR REPOSITORY NAME>
+```
+Next, you can push the local changes to the remote GitHub repository by using `--set-upstream` or `-u` to the command.
+```bash
+git push -u origin main
+```
+Where `origin` is the name you define for your remote repository and `main` the name of the local branch you want to push.
+You can also sinchronize all your local branches with GitHub with the command `git push --all`.
+
+> Quotations lalallallalaall
