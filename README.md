@@ -128,3 +128,22 @@ There are some essential files that should be present in every GitHub repository
 
 ## Pull requests
 Pull requests are the process of submitting changes to the main repository branch through the creation of a new branches. Instead of pushing the changes directly to the main branch, when you are working in a colaborative project, every change must pass the scrutiny of the pull request and code review in order to stablish a quality control for colaboration. It's an essential part of the Git Flow framework.
+
+## Syncing GitHub
+### Clone
+Cloning is how you copy a GitHub repository to your local environment. This usually the first step when you start colaborating witha already created project.
+```bash
+git clone <GitHub repository URL>
+```
+
+### Fetch
+`fetch`` brings the changes made to the remote GitHub repository to the local, without changing your current branch.
+```bash
+git fetch
+```
+
+### Pull
+Finally, `pull` will perform a fetch and merge for your working local branch with the remote branch.
+```bash
+git pull
+```
