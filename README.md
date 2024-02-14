@@ -140,7 +140,7 @@ git clone <GitHub repository URL>
 ```
 
 ### Fetch
-`fetch`` brings the changes made to the remote GitHub repository to the local, without changing your current branch.
+`fetch` brings the changes made to the remote GitHub repository to the local, without changing your current branch.
 ```bash
 git fetch
 ```
@@ -150,3 +150,46 @@ Finally, `pull` will perform a fetch and merge for your working local branch wit
 ```bash
 git pull
 ```
+
+## Best practices for managing issues on GitHub
+1. Be descriptive with titles
+    - Titles are the first thing seen when viewing issues
+    - Keep titles short and simple
+2. One issue per Issue
+    - Provide all the information needed
+    - The information targets one issue per issue
+    - For complex issues, separate into multiple issues
+3. Avoid duplication
+    - Avoiding duplication is essential!
+    - Search for similar issues prior to opening a new one
+4. Communicating within issues
+    - Poor communication:
+        - "Wrong template applied, resolving"
+        - "Issue already exists, closing duplicate"
+    -  Good Communication:
+        - "Incorrect template applied for specific type of issue, please refer to 'Unable to launch application' template to have issue reviewed properly"
+        - Please refer to #103 for information on how to resolve issue"
+5. Set up practical templates
+    - Be detailed
+    - Include prompts for information needed to proceed with review
+    - Consider it in multiple perspectives
+
+## Best practices with projects in GitHub
+1. Use the Description and README
+    - Avoid leaving a project description or README empty
+    - README's support photos, videos and GIFs
+2. Use different views and layouts
+    - Project views can be based on certain criteria which can be changed to fit the scope of a project's goal
+3. Communicate through mentions
+    - Communicate with others on GitHub by using a mention via the @ symbol
+4. Break down large issues
+    - Complex issues can be broken into separate smaller issues
+    - Enable team members to work in parallel and not overlap
+5. Apply workflows
+    - Automate tasks to spend less time on maitenance and more time on reaching goals
+    - Utilize the built-in workflows when possible
+
+
+
+
+
