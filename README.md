@@ -1,6 +1,9 @@
 # Github Foundations Certification Study Guide
 In this repository, we are going to review important Git and Github concepts and commands in order to prepare for the Github Foundations Certification exam. The content was extracted from [Linkedin Prepare for the GitHub Foundations Certification Course](https://www.linkedin.com/learning/paths/prepare-for-the-github-foundations-certification).
 
+## Using GitHub Codespaces to explore this repository
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/GabrielSGoncalves/github_foundations_study_guide)
+
 ## Configuring your Git locally
 First thing to do I to define your username and email.
 ```bash
