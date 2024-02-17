@@ -191,5 +191,10 @@ git pull
 
 
 
+# GitHub Codespaces
+It's a fully managed cloud development environment that allows you to write code, collaborate, test and deploy your applications. It runs on a configurable virtual machine in the cloud.
 
-
+## GitHub Codespaces vs GitHub.dev
+- GitHub.dev allows developers to make quick edits to files in their project
+- It does not offer advanced features like code collaboration, deployment, or development configuration machine features like Codespaces
+- GitHub.dev editors are not persistent
