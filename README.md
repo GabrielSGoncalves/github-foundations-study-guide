@@ -198,3 +198,7 @@ It's a fully managed cloud development environment that allows you to write code
 - GitHub.dev allows developers to make quick edits to files in their project
 - It does not offer advanced features like code collaboration, deployment, or development configuration machine features like Codespaces
 - GitHub.dev editors are not persistent
+
+## Defining your own Codespace Docker Container
+You can define your own Codespace Docker container by creating a a JSON file with the environment settings on `.devcontainer/devcontainer.json`. You can create from your VSCode inside Codespaces selecting the options `View/Command Pallete/>Add dev container configuration files`.
+
